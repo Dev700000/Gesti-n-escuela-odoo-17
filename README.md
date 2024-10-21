@@ -25,11 +25,6 @@ Tambien podemos manejar los cursos y tener informacion clara como nombre del cur
 ### Inscripciones
 Saber que alumnos estan inscritos a los diferentes cursos que se imparte por parte de los maestros así como tambien el estado de esta inscripción como si esta pendiente, confirmada o cancelada 
 
-### Seguridad
-- Implementar medidas de seguridad que restrinjan el acceso y modificación de los datos del módulo.
-- Solo los administradores y usuarios autorizados podrán acceder y gestionar la información.
-- Crear grupos de acceso para diferenciar roles de usuario (Ej. Administrador, Profesor, Coordinador).
-
 ### Mantenimiento
 Actualizaciones: Regularmente revisa el repositorio de GitHub para obtener actualizaciones del módulo.
 
