@@ -1,53 +1,45 @@
 # Módulo de Gestión Educativa para Odoo
 
-## Objetivo
+## INSTRUCIONES
+Requisitos:
+Tener odoo version 17 instalado
+Clonar repositorio
+Instalar el modulo
+Vistas de cursos y materias tienen que poner los permisos manualmente
 
-Este módulo tiene como propósito gestionar las inscripciones de alumnos en un sistema educativo. Permite a una institución educativa administrar eficientemente los recursos relacionados con alumnos, materias, cursos y profesores.
+## USO DEL MODULO
 
-## Requisitos Funcionales
+El modulo gestiona al personal administrativo y estudiantes para la gestión de los mismos así como de las materias y cursos
 
-### Modelo de Alumnos
-- Crear un modelo que herede de `res.partner` para gestionar los datos de los alumnos.
-- Añadir un campo de fecha de nacimiento.
-- Implementar un método que calcule y muestre automáticamente la edad del alumno basado en su fecha de nacimiento.
+### Estudiantes
+ Gestiona los estudiantes su fecha de nacimiento y calcúla su edad
+### Profesores
+Gestiona a los profesores, asi como las materias que inparten y los cursos
 
-### Modelo de Inscripciones
-- Crear un modelo para gestionar las inscripciones de los alumnos en diferentes cursos.
-- Contener referencias a los alumnos, cursos y fecha de inscripción.
-- Incluir un campo de estado para gestionar el flujo de inscripción (Ej. Pendiente, Confirmada, Cancelada).
+### Cursos
+Tambien podemos manejar los cursos y tener informacion clara como nombre del curso, cuanto dura, maximo de estudiantes, que profesor lo imparte y las materias que se van a ver en el curso
 
-### Modelo de Materias
-- Crear un modelo para gestionar las materias que se impartirán en los cursos.
-- Incluir campos como nombre de la materia, descripción y número de créditos.
+### Materias
+ Materias con el maestro que la imparte
 
-### Modelo de Cursos
-- Crear un modelo que herede de `product.template` para gestionar los cursos como productos consumibles.
-- Incluir:
-  - Profesores asignados.
-  - Materias impartidas en el curso.
-  - Duración y fecha de inicio del curso.
-  - Capacidad máxima de alumnos por curso.
-
-### Modelo de Profesores
-- Crear un modelo que herede de `res.partner` para gestionar los datos de los profesores.
-- Incluir referencias a las materias que imparten.
-
-## Requisitos Técnicos
-
-### Interfaz de Usuario
-- Diseñar interfaces de usuario intuitivas para la gestión de alumnos, inscripciones, materias, cursos y profesores.
-- Asegurar la consistencia y usabilidad en todas las vistas del módulo.
+### Inscripciones
+Saber que alumnos estan inscritos a los diferentes cursos que se imparte por parte de los maestros así como tambien el estado de esta inscripción como si esta pendiente, confirmada o cancelada 
 
 ### Seguridad
 - Implementar medidas de seguridad que restrinjan el acceso y modificación de los datos del módulo.
 - Solo los administradores y usuarios autorizados podrán acceder y gestionar la información.
 - Crear grupos de acceso para diferenciar roles de usuario (Ej. Administrador, Profesor, Coordinador).
 
-### Documentación
-- Instrucciones detalladas sobre la instalación, configuración y uso del módulo.
-- Explicación clara de los modelos y su propósito dentro del sistema.
-- Instrucciones para la administración y mantenimiento del sistema.
-- Incluir comentarios en el código que faciliten su comprensión.
+### Mantenimiento
+Actualizaciones: Regularmente revisa el repositorio de GitHub para obtener actualizaciones del módulo.
+
+Revisar Logs: Monitorea los registros de Odoo para identificar errores o problemas de rendimiento.
+
+Permisos de Usuario: Asegúrate de que los permisos de acceso estén configurados correctamente tras cada actualización.
+
+Backup: Realiza copias de seguridad periódicas de la base de datos antes de aplicar cambios.
+
+Documentación: Mantén la documentación del módulo actualizada para facilitar su uso y comprensión.
 
 ## Instalación
 
@@ -55,3 +47,4 @@ Este módulo tiene como propósito gestionar las inscripciones de alumnos en un 
 
    ```bash
    git clone https://github.com/Dev700000/Gesti-n-escuela-odoo-17.git
+
