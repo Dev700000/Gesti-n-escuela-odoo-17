@@ -1,6 +1,9 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_student,access.student.model,model_res_partner,base.group_user,1,1,1,1
-access_enrollment,access.enrollment.model,model_student_enrollment,base.group_user,1,1,1,1
-access_course,access.course.model,model_product_template,base.group_user,1,1,1,1
-access_subject,access.subject.model,model_course_subject,base.group_user,1,1,1,1
-access_teacher,access.teacher.model,model_res_partner,base.group_user,1,1,1,1
+access_student,access.student.model,model_res_partner,group_administrador,1,1,1,1
+access_enrollment,access.enrollment.model,model_student_enrollment,group_administrador,1,1,1,1
+access_enrollment_coordinador,access.enrollment.coordinador.model,model_student_enrollment,group_coordinador,1,1,1,1
+access_course,access.course.model,model_product_template,group_administrador,1,1,1,1
+access_course_profesor,access.course.profesor.model,model_product_template,group_profesor,1,1,0,0
+access_subject,access.subject.model,model_course_subject,group_administrador,1,1,1,1
+access_subject_profesor,access.subject.profesor.model,model_course_subject,group_profesor,1,1,0,0
+access_teacher,access.teacher.model,model_res_partner,group_administrador,1,1,1,1
