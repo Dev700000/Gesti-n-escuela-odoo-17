@@ -11,6 +11,7 @@
     'category': 'Education',
     'depends': ['base', 'product'],
     'data': [
+        'security/security.xml',
         'security/ir.model.access.csv',
         'views/student_view.xml',
         'views/enrollment_view.xml',

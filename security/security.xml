@@ -1,0 +1,16 @@
+<odoo>
+    <!-- Grupo de Administrador -->
+    <record id="group_administrador" model="res.groups">
+        <field name="name">Administrador</field>
+    </record>
+
+    <!-- Grupo de Profesor -->
+    <record id="group_profesor" model="res.groups">
+        <field name="name">Profesor</field>
+    </record>
+
+    <!-- Grupo de Coordinador -->
+    <record id="group_coordinador" model="res.groups">
+        <field name="name">Coordinador</field>
+    </record>
+</odoo>
