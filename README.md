@@ -2,9 +2,9 @@
 
 ## INSTRUCIONES
 Requisitos:
-Tener odoo version 17 instalado
-Clonar repositorio
-Instalar el modulo
+Tener odoo version 17 instalado.
+Clonar repositorio.
+Instalar el modulo.
 Vistas de cursos y materias tienen que poner los permisos al modelo manualmente
 
 ## USO DEL MODULO
