@@ -1,0 +1,19 @@
+<odoo>
+    <!-- Definición del menú raíz -->
+    <menuitem id="menu_gestion_escuela_root" name="Gestión Escuelas" sequence="1"/>
+
+        <!-- Menú de Estudiantes -->
+        <menuitem id="menu_estudiantes" name="Estudiantes" parent="menu_gestion_escuela_root" sequence="10" action="action_estudiantes_view"/>
+
+        <!-- Menú de Profesores -->
+        <menuitem id="menu_teachers" name="Profesores" parent="menu_gestion_escuela_root" sequence="10" action="action_teacher_view"/>
+
+        <!-- Menú de Materias -->
+        <menuitem id="menu_subject" name="Materias" parent="menu_gestion_escuela_root" sequence="10" action="action_subject_view"/>
+
+         
+        <menuitem id="menu_inscripciones" name="Inscripciones" parent="menu_gestion_escuela_root" sequence="10" action="action_enrollment_view"/>
+
+        <menuitem id="menu_cursos" name="Cursos" parent="menu_gestion_escuela_root" sequence="10" action="action_course_view"/>
+
+</odoo>

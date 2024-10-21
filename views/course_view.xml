@@ -1,0 +1,43 @@
+<odoo>
+<record id="view_course_custom_form" model="ir.ui.view">
+    <field name="name">course.custom.form</field>
+    <field name="model">product.template</field> <!-- Cambia el modelo según sea necesario -->
+    <field name="inherit_id" ref="product.product_template_only_form_view"/> <!-- Cambia "your_module" por el nombre de tu módulo -->
+    <field name="arch" type="xml">
+        
+        <xpath expr="//field[@name='product_tag_ids']" position="after">
+                
+                <field name="teacher_ids"/>
+                <field name="subject_ids"/>
+                <field name="date_start"/>
+                <field name="max_students"/>
+                <field name="duration"/>
+           
+        </xpath>
+
+
+    </field>
+</record>
+
+
+    <record id="view_course_tree" model="ir.ui.view">
+        <field name="name">course.tree</field>
+        <field name="model">product.template</field>
+        <field name="arch" type="xml">
+            <tree string="Cursos">
+                <field name="name"/>
+                <field name="list_price"/>
+                <field name="duration"/>
+            </tree>
+        </field>
+    </record>
+     <!-- Acción para abrir la vista de profesores -->
+    <record id="action_course_view" model="ir.actions.act_window">
+        <field name="name">Cursos</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_course_tree"/>
+         
+    </record>
+
+</odoo>

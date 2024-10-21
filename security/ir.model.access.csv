@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_student,access.student.model,model_res_partner,base.group_user,1,1,1,1
+access_enrollment,access.enrollment.model,model_student_enrollment,base.group_user,1,1,1,1
+access_course,access.course.model,model_product_template,base.group_user,1,1,1,1
+access_subject,access.subject.model,model_course_subject,base.group_user,1,1,1,1
+access_teacher,access.teacher.model,model_res_partner,base.group_user,1,1,1,1
